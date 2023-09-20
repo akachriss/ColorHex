@@ -17,6 +17,11 @@ int main(){
     }
     while( input.size() != RGB_HEX_LENGTH );
 
+    int r, g, b;
+    string x = to_string(input);
+    const char* ccx = x.c_str();
+    sscanf(input, "%02x%02x%02x", &r, &g, &b);
+
     cout << "Your hex color is: " << input << endl;
 
     return 0;
