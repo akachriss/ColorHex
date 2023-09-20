@@ -1,6 +1,14 @@
 #include <iostream>
 
+<<<<<<< HEAD
 using namespace std;
+=======
+using std::string;
+using std::cout;
+using std::getline;
+using std::endl;
+using std::cin;
+>>>>>>> c79a032b17ca1ac3a2f50a2afaa1aeaafa18d2f9
 
 const int RGB_HEX_LENGTH = 7;
 
@@ -17,6 +25,7 @@ int main(){
     }
     while( input.size() != RGB_HEX_LENGTH );
 
+<<<<<<< HEAD
     int r, g, b;
     
     string x = to_string(input);
@@ -25,6 +34,8 @@ int main(){
 
     sscanf(input, "%02x%02x%02x", &r, &g, &b);
 
+=======
+>>>>>>> c79a032b17ca1ac3a2f50a2afaa1aeaafa18d2f9
     cout << "Your hex color is: " << input << endl;
 
     return 0;
